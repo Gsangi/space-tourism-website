@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Document</title>
+  </head>
+  <body style="background-image: url(./images/background-crew-desktop.jpg)">
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <div class="crew">
+      <div class="crew-content">
+        <h3>MEET YOUR CREW</h3>
+        <h2>COMMANDER</h2>
+        <h1>DOUGLAS HURLEY</h1>
+        <p>
+          Douglas Gerald Hurley is an American engineer, former Marine Corps
+          pilot and former NASA astronaut. He launched into space for the third
+          time as commander of Crew Dragon Demo-2.
+        </p>
+      </div>
+      <div class="crew-image">
+        <picture>
+            <img src="./images/image-removebg-preview(289).png" alt="douglas-image"/>
+        </picture>
+      </div>
+    </div>
+  </body>
+</html>

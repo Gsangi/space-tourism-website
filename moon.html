@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Document</title>
+  </head>
+  <body style="background-image: url(./images/background-destination-desktop.jpg);">
+    <div id="nav-placeholder">
+
+    </div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("nav.html");
+      });
+      </script>
+    <div>
+      <h3 class="first-destination-heading">PICK YOUR DESTINATION</h3>
+    </div>
+    <div class="moon-container">
+      <picture>
+        <img src="./images/image-moon.webp" alt="moon-image" />
+      </picture>
+      <div class="moon-content">
+        <div class="planet-bar"> 
+          <p>MOON</p>
+          <p>MARS</p>
+          <p>EUROPA</p>
+          <p>TITAN</p>
+        </div>
+        <h1>MOON</h1>
+        <p>
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing si
+          tes.
+        </p>
+        <hr style="margin-top: 100px;"/>
+      </div>
+      <div class="moon-dist-time">
+        <p>AVG. DISTANCE</p>
+        <p>EST. TRAVEL TIME</p>
+        <h2>384,400 KM</h2>
+        <h2>3 DAYS</h2>
+      </div>
+    </div>
+  </body>
+</html>

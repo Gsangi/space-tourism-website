@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Space Tourism</title>
+  </head>
+  <body style="background-image: url(./images/background-home-desktop.jpg);">
+    <section class="header">
+      <div id="nav-placeholder">
+
+      </div>
+      <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+    <section class="home-section">
+      <div class="home-content">
+        <h3>SO, YOU WANT TO TRAVEL TO</h3>
+        <h1>SPACE</h1>
+        <p>
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <!-- <div as="button" class="home-content-button">EXPLORE</div> -->
+      <button class="home-content-button">EXPLORE</button>
+    </section>
+  </body>
+</html>
