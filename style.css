@@ -91,6 +91,7 @@
   .header-items{
     display: flex;
     gap: 3.125rem;
+    padding-block: 2.375rem;
     background: var(--clr-backNav);
     backdrop-filter: blur(40.774227142333984px);
     margin-left: auto;
