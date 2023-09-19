@@ -81,14 +81,14 @@
   .header{
     display: flex;
     align-items: center;
-    margin-top: 4.5rem;
-  }
+    margin-top: 2.5rem;
+}
 
-  .header-icon{
+.header-icon{
     margin-left: 3.5rem;
-  }
+}
 
-  .header-items{
+.header-items{
     display: flex;
     gap: 3.125rem;
     padding-block: 2.375rem;
@@ -97,27 +97,27 @@
     margin-left: auto;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  @media(max-width: 768px) {
+@media(max-width: 768px) {
     .header{margin-top: 0;}
 
     .header-items{
-      gap: 2.3125rem;
-      padding-block: 1.5rem;
+        gap: 2.3125rem;
+        padding-block: 1.5rem;
     }
-  }
+}
 
-  .header-item{
+.header-item{
     all: unset;
     display: flex;
     gap: 0.6875rem;
     position: relative;
     cursor: pointer;
     opacity: 0.75;
-  }
+}
 
-  .header-item::before{
+.header-item::before{
     transition: 300ms;
     height: 3px;
     content: "";
@@ -125,32 +125,63 @@
     inset-inline: 55%;
     position: absolute;
     bottom: -20px;
-  }
+}
 
-  .header-item:hover{
+.header-item:hover{
     opacity: 1;
-  }
+}
 
-  .header-item:hover::before{
+.header-item:hover::before{
     inset-inline: 0%;
-  }
+}
 
-  .header-item:first-child{
+.header-item:first-child{
     margin-left: 8.935rem;
-  }
+}
 
-  .header-item:last-child{
+.header-item:last-child{
     margin-right: 10.4375rem;
-  }
+}
 
-  @media(max-width: 768px) {
+@media(max-width: 768px) {
     .header-item:first-child{
-      margin-left: 3rem;
+        margin-left: 3rem;
     }
     .header-item:last-child{
-      margin-right: 3rem;
+        margin-right: 3rem;
     }
-  }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    .header-items {
+        display: none;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        bottom: 0;
+        width: 250px;
+        flex-direction: column;
+        gap: 1rem;
+        transition: right 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .header-items.active {
+        right: 0; 
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+}
+
 
 
 
